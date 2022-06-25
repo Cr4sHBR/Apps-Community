@@ -12,7 +12,7 @@
     # FACTS #######################################################################
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: "grocy"
+        pgrole: 'grocy'
         intport: '9283'
         extport: '80'
         image: 'grocy/grocy'
@@ -55,10 +55,10 @@
           PGID: '1000'
 
     # MAIN DEPLOYMENT #############################################################
-    - name: '{{pgrole}}'
+    - name: 'grocy'
       docker_container:
-        name: '{{pgrole}}'
-        image: '{{image}}'
+        name: 'grocy'
+        image: 'grocy/grocy'
         pull: yes
         published_ports:
           - '{{ports.stdout}}{{extport}}:{{intport}}'
