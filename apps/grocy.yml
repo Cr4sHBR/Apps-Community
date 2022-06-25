@@ -12,7 +12,7 @@
     # FACTS #######################################################################
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'grocy'
+        pgrole: grocy
         intport: '9283'
         extport: '80'
         image: 'grocy/grocy'
