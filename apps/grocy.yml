@@ -15,7 +15,7 @@
         pgrole: 'grocy'
         intport: '9283'
         extport: '80'
-        image: 'lscr.io/linuxserver/grocy:latest'
+        image: 'grocy/grocy:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
