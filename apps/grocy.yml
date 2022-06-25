@@ -55,7 +55,7 @@
           PGID: '1000'
 
     # MAIN DEPLOYMENT #############################################################
-    - name: 'Deploying {{pgrole}}'
+    - name: '{{pgrole}}'
       docker_container:
         name: '{{pgrole}}'
         image: '{{image}}'
